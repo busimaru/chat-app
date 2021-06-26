@@ -54,16 +54,128 @@
 .chat-top{
   height: 100px;
   padding:0 40px;
+  display:flex;
+  justify-content: space-between;
+}
+
+.chat-gaiyou{
+  margin-top:36px;
+  color:#333;
+  font-size:24px;
+}
+
+.chat-room-end {
+  margin-top:40px;
+}
+
+.chat-room-end a{
+  padding:20px;
+  border:1px solid red;
+  text-decoration: none;
+  color:darkred;
 }
 
 .chat-main{
   height: calc(100vh - 190px);
   background-color: #FAFAFA;
   padding:46px 40px 0;
+  overflow: scroll;
+}
+
+/* 自作 
+.post-information{
+  list-style: none;
+  display:flex;
+  padding:10px 10px 10px 0;
+}
+
+.chat-user{
+  color:#434A54;
+  font-size:16px;
+  padding-right:10px;
+}
+
+.post-time{
+  color:#999;
+  font-size:12px;
+}
+
+.user-message{
+  font-size: 14px;
+  color:#434A54;
+  margin-bottom:40px
+}
+*/
+
+/* 模範回答 */
+.message {
+  margin: 10px 0 0 0;
+}
+
+.upper-message{
+  display: flex;
+}
+
+.message-user {
+  color: #434a54;
+  font-size: 16px;
+}
+
+.message-date {
+  color: #999;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.lower-message {
+  margin-top: 10px;
+}
+
+.message-content {
+  color: #434a54;
+  font-size: 14px;
+  margin-bottom: 40px;
 }
 
 .chat-messages{
   height: 90px;
   background-color: #DDDDDD;
   padding:20px 40px;
+  display:flex
+}
+
+.form-input{
+  display:flex;
+  width:100%;
+  background-color: white;
+}
+
+.form-message{
+  width:100%;
+  height:50px;
+  padding-left:10px;
+  border:none;
+}
+
+.form-submit{
+  border:none;
+  background-color: #38aef0;
+  color: white;
+  padding: 0 20px;
+  font-size: 16px;
+  margin-left: 15px;
+}
+
+.form-image {
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
 }

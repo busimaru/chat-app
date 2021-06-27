@@ -4,15 +4,14 @@
     <%= link_to "#{current_user.name}", edit_user_path(current_user) %>
   </div>
   <div class = "make-chat" > 
-    <a href=#>チャットをする</a>
+    <%= link_to "チャットをする", new_room_path(current_user) %>
   </div>
 </div>
 
 <div class = "side-bottom">
+  <% current_user.rooms.each do |room| %>
   <div class ="chat-room-name">
-    <a href>testroom</a>
+    <a href><%= room.name %></a>
   </div>
-  <div class ="chat-room-name">
-    <a href>testroom2</a>
-  </div>
+  <% end %>
 </div>
